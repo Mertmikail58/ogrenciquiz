@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Word Finder Game</title>
+</head>
+<body>
+    <h2 id="hint"></h2>
+    <div class="container" id="container"></div>
+    <h3 id="attempts">Kelimeyi tahmin etmek için 3 hakkınız var!</h3>
+    <input type="text" id="guessInput" placeholder="Tahmin edin">
+    <button id="guessButton" disabled>Doğru mu?</button>
+    <h2 id="result"></h2>
+    <div id="score"></div>
+
+
+    <!-- Zorluk seviyesi butonlarını içeren div -->
+    <div class="butonlar">
+        <button onclick="secimYap('kolay')">Kolay</button>
+        <button onclick="secimYap('orta')">Orta</button>
+        <button onclick="secimYap('zor')">Zor</button>
+    </div>    
+
+    <script src="kodlar.js"></script>
+</body>
+</html>
